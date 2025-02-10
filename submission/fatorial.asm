@@ -1,7 +1,8 @@
 LD N 	;carrega o numero o qual sera calculado o fatorial
 MM N  ;guarda o valor inicial do N em RES
 SC FAT 	;chamada da subrotina
-MM RES 	;armazena o resultado final 
+LD RES
+MM RESFINAL 	;armazena o resultado final 
 HM =0
 
 
@@ -23,11 +24,14 @@ FIM 	RS FAT
 @ /100
 N  K /0003
 
-@ /102
+@ /020
 RES K /0001 ;reserva uma posicao da memoria para armazenar o resultado final 
 
-@ /104 
+@ /024
 PROV K /0001 ;resultado provisorio
 
-@ /106 
+@ /022 
 UM K /0001
+
+@ /102
+RESFINAL K /0001
