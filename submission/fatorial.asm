@@ -1,5 +1,5 @@
 LD N 	;carrega o numero o qual sera calculado o fatorial
-MM RES  ;guarda o valor inicial do N em RES
+MM N  ;guarda o valor inicial do N em RES
 SC FAT 	;chamada da subrotina
 MM RES 	;armazena o resultado final 
 HM =0
