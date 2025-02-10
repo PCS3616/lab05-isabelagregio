@@ -5,12 +5,11 @@ MM RES 	;armazena o resultado final
 HM =0
 
 
-
-FAT
+@ /200
+FAT     K /0000
 	LD N 
 	JZ FIM 
-LOOP
-	MM PROV 
+LOOP	MM PROV 
 	ML RES
 	MM RES 
 	LD PROV
@@ -18,20 +17,17 @@ LOOP
 	MM PROV
 	JZ FIM 
 	JP LOOP
-FIM 
-	RS FAT
+FIM 	RS FAT
 
 ; rotulos 
 @ /100
-N  K = 3
+N  K /0003
 
 @ /102
-RES K = 1 ;reserva uma posicao da memoria para armazenar o resultado final 
+RES K /0001 ;reserva uma posicao da memoria para armazenar o resultado final 
 
 @ /104 
-PROV K = 1 ;resultado provisorio
+PROV K /0001 ;resultado provisorio
 
 @ /106 
-UM K = 1
-
-
+UM K /0001
