@@ -1,0 +1,28 @@
+LD N
+MM ANT
+LOOP LD ANT
+	ML /0002
+	AD /0001
+	MM PROX
+	AD ANT 
+	MM ANT
+	SB /F81
+	JZ FIM
+	JP LOOP
+FIM HM =0
+
+
+
+
+@ /300
+N K /0000
+
+@ /302
+ANT K /0000
+
+@ /304
+PROX K /0000
+
+
+
+
