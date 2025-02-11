@@ -1,11 +1,14 @@
 LD N
 MM PROX
-LOOP    LD ANT
+LOOP    LD I 
 	ML DOIS
 	AD UM
-	MM ANT
 	AD PROX
 	MM PROX
+	
+	LD I 
+	AD UM
+	MM I
 	
 	LD PTR 
 	AD OP_MM
@@ -31,7 +34,7 @@ FIM HM =0
 N K /0000
 
 @ /302
-ANT K /0000
+I K /0000
 
 @ /304
 PROX K /0000
@@ -53,10 +56,11 @@ UM K /0001
 DOIS K /0002
 
 @ /204
-LIM K /0009
+LIM K /0F81
 
 @ /100
 INICIO K /0000
+
 
 
 
