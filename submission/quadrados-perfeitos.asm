@@ -1,24 +1,24 @@
 LD N
 MM PROX
-LOOP    LD I 
+LOOP    LD I ; contador i do somatorio
 	ML DOIS
-	AD UM
-	AD PROX
-	MM PROX
+	AD UM ; calcula o proximo impar 
+	AD PROX ; soma com o numero que estava armazenado
+	MM PROX ;atualiza o valor para o proximo loop
 	
-	LD I 
-	AD UM
+	LD I  
+	AD UM ; incremnta o contador i 
 	MM I
 	
 	LD PTR 
-	AD OP_MM
-	MM ARMAZENA
+	AD OP_MM ; monta a instrucao de armazaenamento 
+	MM ARMAZENA ; executa a instrucao montada
 	LD PROX
 ARMAZENA K /0000
 
 
 	LD PTR 
-	AD DOIS 
+	AD DOIS ; atualiza o endereco onde sera armazenado o proximo resultado 
 	MM PTR
 	
 	LD PROX
