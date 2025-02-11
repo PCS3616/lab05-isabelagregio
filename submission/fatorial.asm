@@ -9,15 +9,15 @@ HM =0
 @ /200
 FAT     K /0000
 	LD N 
-	JZ FIM 
+	JZ FIM  ; trata em especial o caso do fatorial de zero
 LOOP	MM PROV 
-	ML RES
+	ML RES ;multiplica pelo proximo valor na sequencia do fatorial 
 	MM RES 
 	LD PROV
 	SB UM 
 	MM PROV
-	JZ FIM 
-	JP LOOP
+	JZ FIM ; pula para o fim 
+	JP LOOP ; volta para o loop 
 FIM 	RS FAT
 
 ; rotulos 
